@@ -53,7 +53,7 @@ $.fn.smoothScroll = function(options) {
       var scrollTargetOffset = $(scrollTargetId).offset().top;
 
       $(scrollElem).animate({scrollTop: scrollTargetOffset + opts.offset}, 400, function() {
-        // location.hash = target;
+        location.hash = scrollTargetId; //add the id to url; fix by riaan
       });
     }
   });
